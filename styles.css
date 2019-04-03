@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    background-image: url(assets/background.png);
+    font-family: 'PT Serif', serif;
+    
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+ 
+}
+
+
+
+header {
+    
+    background: #333333;
+    
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: block;
+}
+
+
+.clearfix:after {
+    clear:both;
+}
+
+
+.logo{
+    float: left;
+    padding: 10px 0;
+}
+
+nav{
+    float: right;
+} 
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 15px;
+    position: relative;
+
+}
+
+nav a{
+    font-family: 'Open Sans', sans-serif;
+    color: #ff0099;
+    text-transform: uppercase;
+
+}
+
+nav a:hover{
+    color: #c41874;
+}
+
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #c41874;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+
+nav a:hover::before{
+    width: 100%;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.profile h1{
+    font-size: 40pt;
+    margin-top: 100px;
+    
+}
+
+.profile h2{
+    font-size: 20pt;
+    margin-top: 40px;
+    color: #ff0099;
+}
+
+.profile h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15pt;
+    margin-top: 15px;
+    
+}
+
+.separator h1{
+    text-align: center;
+    margin: 50px auto;
+    font-size: 20pt;
+}
+
+.home h1{
+    text-align: center;
+    font-size: 35pt;
+}
+
+.home dt{
+    font-size: 25pt;
+}
+
+.home dd{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    margin: 10px auto 20px 10px;
+}
+
